@@ -25,7 +25,7 @@ def allowed_file(filename):
 
 
 @app.route('/', methods=['GET', 'POST'])
-def upload_file():
+def index():
     if request.method == 'POST':
         if 'file' not in request.files:
             flash('ファイルがありません')
